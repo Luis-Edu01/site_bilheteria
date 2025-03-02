@@ -119,6 +119,9 @@ main ::placeholder{
 main input:focus{
     outline: none;
 }
+main input:hover{
+    background-color: rgba(255, 242, 223, 0.205);
+}
 
 main .file-upload {
     display: inline-block;
@@ -128,10 +131,13 @@ main .file-upload {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     text-align: center;
-    color: white; 
+    color: rgb(255, 255, 255); 
     font-size: 16px;
     height: 60px;
     width: 280px;
+}
+main .file-upload:hover{
+    background-color: rgba(255, 242, 223, 0.205);
 }
 
 main .file-upload input[type="file"] {
@@ -149,7 +155,6 @@ main button{
     width: 310px;
     border-radius: 10px;
     border: 0;
-    margin-bottom: 27px;
     color: rgb(255, 255, 255);
     font-size: 1em;
     font-weight: bold;
@@ -158,9 +163,11 @@ main button{
 main button a{
     color: #fff;
     text-decoration: none;
+
 }
-main button a:hover{
-    color: rgb(255, 166, 0); ;
+main a button:hover{
+    color: rgb(255, 166, 0);
+    background-color: rgba(255, 242, 223, 0.205);
 }
 
 button:focus{
@@ -168,12 +175,15 @@ button:focus{
 }
 
 footer{
+    position: fixed;
     bottom: 0;
-    text-align:center;
+    left: 0;
+    width: 100%;
+    text-align: center;
     padding: 10px;
-    position: relative;
-    z-index: 10;
-    color:white;  
+    background-color: transparent;
+    color: #fff;
+    z-index: 10; 
 }
 
 footer a{
