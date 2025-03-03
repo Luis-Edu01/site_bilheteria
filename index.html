@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bilheteria</title>
     <link rel="stylesheet" href="style/homeStyle.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/homepage.js" defer></script>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <div>
-       <img class="fundo-img principal" src="images/background-desktop.png" alt="imagem1">
+        <img class="fundo-img principal" src="images/background-desktop.png" alt="imagem1">
         <img class="fundo-img pattern-lines" src="images/pattern-lines.svg" alt="imagem2">
         <img class="fundo-img pattern-circle" src="images/pattern-circle.svg" alt="imagem3">
         <img class="fundo-img pattern-circle2" src="images/pattern-circle.svg" alt="imagem3">
@@ -25,30 +25,28 @@
     <main>
         <form id="bilheteria" method="get">
             <label for="nome">Nome Completo:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui..." requerid><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui..." required><br><br>
     
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="teste123@email.com" requerid><br><br>
+            <input type="email" id="email" name="email" placeholder="teste123@email.com" required><br><br>
     
             <label for="github">GitHub:</label><br>
-            <input type="text" id="github" name="github" placeholder="https://github.com/Luis-Edu01" requerid><br><br>
+            <input type="text" id="github" name="github" placeholder="https://github.com/Luis-Edu01" required><br><br>
     
-            <label >Upload de sua imagem:</label><br>
+            <label>Upload de sua imagem:</label><br>
             <label for="upload" class="file-upload">
-                <input type="file" id="upload" name="imagem" accept="image/*"><img id="icon-upload" src="images/icon-upload.svg" alt="">
+                <input type="file" id="upload" name="imagem" accept="image/*">
+                <img id="icon-upload" src="images/icon-upload.svg" alt="">
                 <span>adicione sua foto ao ticket</span>
             </label><br><br>
 
-           <a href="pages/tickt.html">
-                <button type="button" id="button">Gerar Ticket</button>
-           </a>
+            <button type="submit" id="button">Gerar Ticket</button>
 
         </form>
-       
     </main>
-
+    
     <footer>
-        <p>Escrito por <b><a href="https://github.com/Luis-Edu01">Luís Eduardo</a> </b></p>
+        <p>Escrito por <b><a href="https://github.com/Luis-Edu01">Luís Eduardo</a></b></p>
     </footer>
 </body>
 </html>

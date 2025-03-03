@@ -91,32 +91,12 @@ body{
     font-weight: bold;
     font-size: 2em;
 }
-.foto-upload{
-    position: absolute;
-    z-index: 11;
-    left: 38%;
-    top: 67%;
-    width: 45px;
-    border-radius: 8px;
-}
 .foto-github{
     position: absolute;
     z-index: 11;
-    left: 42%;
+    left: 43%;
     top: 70%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 header{
     position: relative;
     z-index: 10;
@@ -131,7 +111,62 @@ header h1{
 header p{
     padding-top: 15px;
     font-size: 2.5rem;
+    color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+main section{
+    position: absolute;
+    z-index: 11;
+}
+
+main #exibirNome2{
+    position: absolute;
+    z-index: 11;
+    left:43%;
+    top: 65%;
+    font-size: 1.2em;
+    color:white;
+}
+
+main #exibirGithub{
+    position: absolute;
+    z-index: 11;
+    left:44.8%;
+    top:70%;
+    font-size: 1.2em;
+    color:white;
+}
+main #exibirImagem{
+    position: absolute;
+    z-index: 11;
+    left: 38%;
+    top: 65%;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
     position: fixed;
