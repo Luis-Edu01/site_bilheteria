@@ -4,8 +4,17 @@
 }
 
 :root{
-    --fundo:black;
-    --fonte: white;
+    --Cor_Fonte:#ffffff;
+    --Color_Font_input:#ffffff;
+    --header-p: #b86666;
+    --Color-Button: #61398175;
+    --Background-Button: #fff2df34;
+    --hover-upload: #fff2df34;
+    --Background-upload: #ffffff1a;
+    --hover-input: #fff2df34;
+    --color-input: #ffffff59;
+    --hover-button: #ffa600;
+    --hover-footer: #ffa600;
 }
 
 body{
@@ -17,7 +26,7 @@ body{
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 100vh; /*altura*/
+    height: 100vh;
     top: 0;
 }
 
@@ -71,15 +80,18 @@ header{
     position: relative;
     z-index: 10;
     text-align: center;
-    color: var(--fonte);
+    color: var(--Cor_Fonte);
 }
+
 header h1{
     padding: 15px;
-    font-size: 3em;
+    font-size: 3rem;
 }
+
 header p{
     padding: 10px;
     font-size: 1.5rem;
+    color: var(--header-p);
 }
 
 main{
@@ -95,49 +107,51 @@ main #bilheteria{
 }
 
 main label{
-    color: var(--fonte);
+    color: var(--Cor_Fonte);
     font-weight:  normal;
     font-size: 1.2rem;
     padding-bottom: 10px;
     text-align: left;
 }
 main input{
-    font-size: 1em;
-    color: var(--fonte);
+    font-size: 1rem;
     margin-top: 5px;
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.35);
+    color: var(--Cor_Fonte);
+    border-color: var(--color-input);
     border-radius: 10px;
     height: 30px;
     width: 300px;
 }
 
 main ::placeholder{
-    color: rgba(255, 255, 255, 0.35);
+    color: var(--color-input);
 }
 
 main input:focus{
+    color: var(--Color_Font_input);
     outline: none;
 }
+
 main input:hover{
-    background-color: rgba(255, 242, 223, 0.205);
+    background-color: var(--hover-input);
 }
 
 main .file-upload {
     display: inline-block;
     padding: 10px;
-    border: 2px dashed rgba(255, 255, 255, 0.35); 
+    border: 2px dashed var(--hover-upload); 
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--Background-upload);
     cursor: pointer;
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: var(--Cor_Fonte);
     font-size: 16px;
     height: 60px;
     width: 280px;
 }
 main .file-upload:hover{
-    background-color: rgba(255, 242, 223, 0.205);
+    background-color: var(--hover-upload);
 }
 
 main .file-upload input[type="file"] {
@@ -150,24 +164,23 @@ main .file-upload span {
 }
 
 main button{
-    background-color: #61398175;
+    background-color: var(--Color-Button);
     height: 40px;
     width: 310px;
     border-radius: 10px;
     border: 0;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    color:var(--Cor_Fonte);
 }
 main button a{
-    color: #fff;
     text-decoration: none;
 
 }
-main a button:hover{
-    color: rgb(255, 166, 0);
-    background-color: rgba(255, 242, 223, 0.205);
+main button:hover{
+    color: var(--hover-button);
+    background-color: var(--Background-Button);
 }
 
 button:focus{
@@ -182,15 +195,15 @@ footer{
     text-align: center;
     padding: 10px;
     background-color: transparent;
-    color: #fff;
+    color: var(--Cor_Fonte);
     z-index: 10; 
 }
 
 footer a{
-    color: var(--fonte);
+    color: var(--Cor_Fonte);
     text-decoration: none;
 }
 
 footer a:hover{
-    color: rgb(255, 166, 0); 
+    color: var(--hover-footer);
 }

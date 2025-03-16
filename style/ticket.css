@@ -4,7 +4,11 @@
 }
 
 :root{
-    --fonte: white;
+    --Cor_Fonte: white;
+    --destaque-p: #d14141;
+    --color-logo-bilhete: #e08d66;
+    --color-codigo-bilhete: #f7f5f559;
+    --hover-footer: #ffa600;
 }
 
 body{
@@ -89,8 +93,8 @@ body{
     left: 41%;
     top: 51%;
     font-weight: bold;
-    font-size: 1.8em;
-    color: #e08d66;
+    font-size: 1.8rem;
+    color: var(--color-logo-bilhete);
 }
 
 .foto-github{
@@ -109,14 +113,14 @@ header{
 }
 
 header p{
-    color: white;
+    color: var(--Cor_Fonte);
     font-size: 2rem;
 }
 #exibirNome{
-    color: red;
+    color: var(--destaque-p);
 }
 #exibirEmail{
-    color: red;
+    color: var(--destaque-p);
 }
 main section{
     position: absolute;
@@ -128,8 +132,8 @@ main #exibirNome2{
     z-index: 8;
     left:43%;
     top: 65%;
-    font-size: 1.2em;
-    color:white;
+    font-size: 1.2rem;
+    color: var(--Cor_Fonte);
 }
 
 main #exibirGithub{
@@ -137,8 +141,8 @@ main #exibirGithub{
     z-index: 8;
     left:44.8%;
     top:70%;
-    font-size: 1.2em;
-    color:white;
+    font-size: 1.2rem;
+    color: var(--Cor_Fonte);
 }
 main #exibirImagem{
     position: absolute;
@@ -152,50 +156,50 @@ main #exibirImagem{
 }
 
 #cerquilha{
-    color: rgba(247, 245, 245, 0.35);
+    color: var(--color-codigo-bilhete);
     position: absolute;
     z-index: 9;
     left: 59.75%;
     top: 56%;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     transform:rotate(90deg) /* Gira a cerquilha para a lateral do ticket*/
 }
 
 #numeroAleatorio{
-    color: rgba(247, 245, 245, 0.35);
+    color: var(--color-codigo-bilhete);
     position: absolute;
     z-index: 9;
     left: 57.9%;
     top: 62%;
-    font-size: 1.3em;
-    transform:rotate(90deg) /* Gira o numero da lateral do ticket*/
+    font-size: 1.3rem;
+    transform:rotate(90deg) /* Gira o número da lateral do ticket*/
 }
 
 #dataHora {
-    color: white;
+    color: var(--Cor_Fonte);
     position: absolute;
     z-index: 9;
     left:40.8%;
     top: 57%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #cidade{
-    color: white;
+    color: var(--Cor_Fonte);
     position: absolute;
     z-index: 9;
     left:51.6%;
     top: 56.9%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #barra{
-    color: white;
+    color: var(--Cor_Fonte);
     position: absolute;
     z-index: 9;
     left:51.1%;
     top: 56.7%;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 footer {
@@ -206,15 +210,15 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: transparent;
-    color: #fff;
+    color: var(--Cor_Fonte);
     z-index: 7; 
 }
 
 footer a{
-    color: var(--fonte);
+    color: var(--Cor_Fonte);
     text-decoration: none;
 }
 
 footer a:hover{
-    color: rgb(255, 166, 0); 
+    color: var(--hover-footer); 
 }
