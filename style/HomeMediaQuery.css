@@ -1,0 +1,76 @@
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .principal {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+
+    main #bilheteria {
+        margin: 10px auto !important;
+        padding: 15px !important;
+        width: 90% !important;
+        max-width: 400px;
+    }
+
+    main input,
+    main .file-upload,
+    main button {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pattern-squiggly-bottom {
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 100% !important;
+        height: auto !important;
+        max-width: 600px;
+    }
+
+    .pattern-squiggly-top {
+        right: -10%;
+        max-width: 250px;
+    }
+
+    footer {
+        position: relative !important;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+}
+
+/* Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main #bilheteria {
+        margin-left: 15vw !important;
+        margin-right: 15vw !important;
+        width: 70% !important;
+    }
+
+    .pattern-squiggly-bottom {
+        width: 120% !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+}
