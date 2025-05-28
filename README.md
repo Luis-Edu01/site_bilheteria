@@ -27,9 +27,6 @@ O objetivo é criar um formulário acessível que gera um ingresso personalizado
   - Captura localização em tempo real do usuário para adicionar no ticket
   - adiciona a data e hora de criação ao ticket
 
-- **Responsividade:**
-  - Layout adaptável para mobile e desktop.
-
 - **Interatividade:**
   - Exibição do ingresso gerado após o envio bem-sucedido do formulário.
  
