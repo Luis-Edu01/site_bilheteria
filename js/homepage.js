@@ -17,7 +17,7 @@ document.getElementById('bilheteria').addEventListener('submit', function(event)
     console.log('GitHub:', github);
     console.log('Imagem:', upload ? 'Selecionada' : 'Não selecionada');
 
-    // Converte a imagem
+    // Converte a imagem --> feito por IA
     if (upload) {
         const reader = new FileReader();
         reader.onload = function(event) {

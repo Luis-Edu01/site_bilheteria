@@ -3,12 +3,21 @@
     padding: 0;
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root{
     --Cor_Fonte: white;
     --destaque-p: #d14141;
     --color-logo-bilhete: #e08d66;
     --color-codigo-bilhete: #f7f5f559;
     --hover-footer: #ffa600;
+    --fonte: 'Inconsolata', monospace;
+    --fonte2: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -95,6 +104,7 @@ body{
     font-weight: bold;
     font-size: 1.8rem;
     color: var(--color-logo-bilhete);
+    font-family: var(--fonte);
 }
 
 .foto-github{
@@ -115,12 +125,15 @@ header{
 header p{
     color: var(--Cor_Fonte);
     font-size: 2rem;
+    font-family: var(--fonte2);
 }
 #exibirNome{
     color: var(--destaque-p);
+    font-family: var(--fonte);
 }
 #exibirEmail{
     color: var(--destaque-p);
+    font-family: var(--fonte);
 }
 main section{
     position: absolute;
@@ -134,6 +147,7 @@ main #exibirNome2{
     top: 65%;
     font-size: 1.2rem;
     color: var(--Cor_Fonte);
+    font-family: var(--fonte);
 }
 
 main #exibirGithub{
@@ -143,6 +157,7 @@ main #exibirGithub{
     top:70%;
     font-size: 1.2rem;
     color: var(--Cor_Fonte);
+    font-family: var(--fonte);
 }
 main #exibirImagem{
     position: absolute;
@@ -162,7 +177,8 @@ main #exibirImagem{
     left: 59.75%;
     top: 56%;
     font-size: 1.3rem;
-    transform:rotate(90deg) /* Gira a cerquilha para a lateral do ticket*/
+    transform:rotate(90deg); /* Gira a cerquilha para a lateral do ticket*/
+    font-family: var(--fonte);
 }
 
 #numeroAleatorio{
@@ -172,7 +188,8 @@ main #exibirImagem{
     left: 57.9%;
     top: 62%;
     font-size: 1.3rem;
-    transform:rotate(90deg) /* Gira o número da lateral do ticket*/
+    transform:rotate(90deg); /* Gira o número da lateral do ticket*/
+    font-family: var(--fonte);
 }
 
 #dataHora {
@@ -181,7 +198,8 @@ main #exibirImagem{
     z-index: 9;
     left:40.8%;
     top: 57%;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    font-family: var(--fonte);
 }
 
 #cidade{
@@ -190,7 +208,8 @@ main #exibirImagem{
     z-index: 9;
     left:51.6%;
     top: 56.9%;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-family: var(--fonte);
 }
 
 #barra{
@@ -212,6 +231,7 @@ footer {
     background-color: transparent;
     color: var(--Cor_Fonte);
     z-index: 7; 
+    font-family: var(--fonte2);
 }
 
 footer a{
